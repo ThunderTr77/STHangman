@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hang Man by TS</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <style>
+      #nguoique {
+        margin-top: 20px;
+      }
+      .line {
+        stroke: black;
+        stroke-width: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a href="" class="header__logo-link">
+          <img
+            class="header__logo-img"
+            src="./assets/images/image.svg"
+            alt="Logo"
+          />
+        </a>
+      </div>
+      <div class="tieudeh1">
+        <h1><b>HANG MAN</b></h1>
+      </div>
+      <div class="header__play-button">
+        <button id="playButton">Play</button>
+      </div>
+    </header>
+    <div class="container">
+      <svg id="nguoique" viewBox="0 0 200 300" width="400" height="500">
+        <line id="rope" x1="100" y1="10" x2="100" y2="40" class="line" />
+        <line id="sline" x1="20" y1="10" x2="150" y2="10" class="line" />
+        <line x1="2" y1="190" x2="200" y2="190" class="line" />
+        <line id="polar" x1="22" y1="10" x2="22" y2="190" class="line" />
+        <circle
+          id="headd"
+          cx="100"
+          cy="70"
+          r="30"
+          stroke="black"
+          stroke-width="4"
+          fill="none"
+        />
+        <circle
+          id="headd"
+          cx="90"
+          cy="65"
+          r="2"
+          stroke="black"
+          stroke-width="4"
+          fill="none"
+        />
+        <circle
+          id="headd"
+          cx="110"
+          cy="65"
+          r="2"
+          stroke="black"
+          stroke-width="4"
+          fill="none"
+        />
+
+        <line id="body" x1="100" y1="100" x2="100" y2="150" class="line" />
+        <line id="hand" x1="100" y1="110" x2="70" y2="120" class="line" />
+        <line id="hand" x1="100" y1="110" x2="130" y2="120" class="line" />
+        <line id="leg" x1="100" y1="150" x2="65" y2="170" class="line" />
+        <line id="leg" x1="100" y1="150" x2="135" y2="170" class="line" />
+      </svg>
+
+      <div class="keyboard-container">
+        <div id="wordDisplay" class="word-display"></div>
+        <div id="hint" class="hint">Hint</div>
+        <div class="keyboard">
+          <button>A</button>
+          <button>B</button>
+          <button>C</button>
+          <button>D</button>
+          <button>E</button>
+          <button>F</button>
+          <button>G</button>
+          <button>H</button>
+          <button>I</button>
+          <button>J</button>
+          <button>K</button>
+          <button>L</button>
+          <button>M</button>
+          <button>N</button>
+          <button>O</button>
+          <button>P</button>
+          <button>Q</button>
+          <button>R</button>
+          <button>S</button>
+          <button>T</button>
+          <button>U</button>
+          <button>V</button>
+          <button>W</button>
+          <button>X</button>
+          <button>Y</button>
+          <button>Z</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+      fetch("./assets/wordrandom.txt")
+        .then((response) => response.text())
+        .then((data) => {
+          const script = document.createElement("script");
+          script.type = "application/javascript";
+          script.textContent = `const wordsWithHints = \`${data}\`.split('\\n').map(line => line.trim()).filter(line => line.length > 0);`;
+          document.body.appendChild(script);
+        })
+        .catch((error) => console.error("Lỗi khi đọc file:", error));
+    </script>
+  </body>
+</html>
