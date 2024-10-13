@@ -109,16 +109,5 @@
     </div>
 
     <script src="./assets/js/main.js"></script>
-    <script>
-      fetch("./assets/wordrandom.txt")
-        .then((response) => response.text())
-        .then((data) => {
-          const script = document.createElement("script");
-          script.type = "application/javascript";
-          script.textContent = `const wordsWithHints = \`${data}\`.split('\\n').map(line => line.trim()).filter(line => line.length > 0);`;
-          document.body.appendChild(script);
-        })
-        .catch((error) => console.error("Lỗi khi đọc file:", error));
-    </script>
   </body>
 </html>
