@@ -1,0 +1,8 @@
+HELLO/A simple word
+WORLD/A planet
+JAVASCRIPT/A programming language
+HANGMAN/This game name
+COMPUTER/A wonderful machine
+LOWERCASE/word not in capital
+UPPERCASE/word in capital
+STAR/bright object on the night sky

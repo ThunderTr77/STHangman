@@ -1,0 +1,109 @@
+:root {
+  --header-height: 100px;
+}
+
+.tieudeh1 {
+  margin-left: 460px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  height: var(--header-height);
+}
+
+.header__logo. {
+  width: 100px;
+  display: flex;
+  justify-content: left;
+  text-align: center;
+}
+.header__play-button {
+  margin-left: 480px;
+}
+.header__play-button button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.header__logo-img {
+  height: calc(var(--header-height) - 4px);
+}
+svg {
+  width: 400px;
+  height: 500px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  background-color: #1e1e1e;
+  gap: 50px;
+}
+
+.keyboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 30px;
+}
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  gap: 10px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #3a6ad4;
+}
+.word-display {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Khoảng cách giữa các chữ cái */
+}
+
+.letter {
+  width: 40px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Căn chữ vào giữa theo chiều dọc */
+  margin: 0; /* Xóa margin mặc định */
+  padding: 0; /* Xóa padding mặc định */
+  box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng kích thước */
+  line-height: 1; /* Đảm bảo không tạo thêm khoảng trống giữa các dòng */
+}
+
+.hint {
+  font-size: 18px;
+  color: white;
+  margin-top: 15px;
+  text-align: center;
+  font-style: italic;
+}
