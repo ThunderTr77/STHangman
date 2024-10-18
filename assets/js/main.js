@@ -128,6 +128,7 @@ function hideKeyboard() {
 }
 
 playButton.addEventListener("click", () => {
+  playSound.play();
   resetGame();
 });
 
