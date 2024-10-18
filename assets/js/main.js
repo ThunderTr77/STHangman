@@ -5,6 +5,11 @@ const wordDisplay = document.getElementById("wordDisplay");
 const hintElement = document.getElementById("hint");
 const playButton = document.getElementById("playButton");
 const keyboardButtons = document.querySelectorAll(".keyboard button");
+const playSound = new Audio("./assets/audio/play-sound.mp3");
+const buttonSound = new Audio("./assets/audio/button-sound.mp3");
+const bodySound = new Audio("./assets/audio/body-sound.mp3");
+const winSound = new Audio("./assets/audio/win-sound.mp3");
+const loseSound = new Audio("./assets/audio/lose-sound.mp3");
 
 const bodyParts = [
   document.getElementById("polar"),
@@ -61,6 +66,7 @@ function displayWord() {
   });
 
   if (checkWin()) {
+    winSound.play();
     setTimeout(() => alert("You Win!"), 100);
     resetGame();
   }
@@ -70,14 +76,18 @@ function handleGuess(letter, button) {
   button.style.visibility = "hidden";
   if (Word.includes(letter)) {
     guessedLetters.push(letter);
+    buttonSound.play();
     displayWord();
   } else {
     wrongGuessCount++;
+
     if (wrongGuessCount <= bodyParts.length) {
       showBodyPart(bodyParts[wrongGuessCount - 1]);
     }
+    bodySound.play();
     if (wrongGuessCount === bodyParts.length) {
       setTimeout(() => {
+        loseSound.play();
         alert(`You Lose! The word was: ${Word}`);
         resetGame();
       }, 100);
@@ -124,6 +134,7 @@ playButton.addEventListener("click", () => {
 keyboardButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const letter = button.textContent;
+
     handleGuess(letter, button);
   });
 });
