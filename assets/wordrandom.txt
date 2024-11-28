@@ -1,8 +1,31 @@
 HELLO/A simple word
-WORLD/A planet
 JAVASCRIPT/A programming language
 HANGMAN/This game name
 COMPUTER/A wonderful machine
 LOWERCASE/word not in capital
 UPPERCASE/word in capital
 STAR/bright object on the night sky
+innovative/có tinh đổi mơi
+scenarios/kịch bản viển cảnh
+metabolism/trao đổi chât
+steady/có tính ổn định
+sluggish/uể oải
+stride/sải bước
+revolutionize/cách mạng hóa
+sector/hình quạt; khu vực
+diagnostic/chẩn đoán
+routine/ nề nếp;
+cognitive/ nhận thức
+outbreak/ cơn;bột phát
+sophisticated/tinh sảo, tinh vi
+imperative/cấp bách;quan trọng
+ethical/đạo đức
+implication/ sự ngụ ý/ ẩn ý
+transparent/trong suốt;rõ ràng;dễ hiểu
+mitigating/làm nhẹ; làm dịu bớt
+embrace/ôm
+trivial/k đáng quan tâm
+pivotal/quan trọng
+hinder/cản trở; che giấu
+biodiversity/đa dạng sinh học
+noticeable/ đáng chú ý
