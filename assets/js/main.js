@@ -1,6 +1,6 @@
 let Word = "";
 let hint = "";
-
+let preW = "";
 const wordDisplay = document.getElementById("wordDisplay");
 const hintElement = document.getElementById("hint");
 const playButton = document.getElementById("playButton");
@@ -67,8 +67,8 @@ function displayWord() {
 
   if (checkWin()) {
     winSound.play();
-    alert(`You Win! The word was: ${Word}`);
-    setTimeout(() => alert(`You Win!`), 100);
+    preW = Word;
+    setTimeout(() =>{alert(`You Win! The word was: ${preW}`);},100);
     resetGame();
   }
 }
