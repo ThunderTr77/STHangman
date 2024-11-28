@@ -67,11 +67,8 @@ function displayWord() {
 
   if (checkWin()) {
     winSound.play();
-    setTimeout(() =>
-    {
-      alert(`You Win! The word was:), 100);
-      alert(` ${Word}`);
-    }
+    alert(`You Win! The word was: ${Word}`);
+    setTimeout(() => alert(`You Win!`), 100);
     resetGame();
   }
 }
