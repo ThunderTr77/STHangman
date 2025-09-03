@@ -2,7 +2,7 @@ HELLO/A simple word
 JAVASCRIPT/A programming language
 HANGMAN/This game name
 COMPUTER/A wonderful machine
-LOWERCASE/word not in capital
+
 UPPERCASE/word in capital
 STAR/bright object on the night sky
 innovative/có tinh đổi mơi
@@ -29,3 +29,11 @@ pivotal/quan trọng
 hinder/cản trở; che giấu
 biodiversity/đa dạng sinh học
 noticeable/ đáng chú ý
+weeds/cỏ dại 
+repellent/chống (insect repellent/thuốc chống côn trùng)
+roast/nướng
+marshmallows/kẹo dẽo
+blue jays/chim giẻ cùi xanh
+hummingbirds/chim ruồi
+raccoon/gấu mèo
+squirrel/con sóc
