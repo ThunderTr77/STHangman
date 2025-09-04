@@ -37,3 +37,6 @@ blue jays/chim giẻ cùi xanh
 hummingbirds/chim ruồi
 raccoon/gấu mèo
 squirrel/con sóc
+closet: tủ quần áo
+basement: tầng hầm
+wood: gỗ 
